@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 네모로직</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <h1>나만의 네모로직</h1>
+    <p>첫 번째 5×5 퍼즐</p>
+
+    <table oncontextmenu="return false;">
+        <!-- 세로 숫자 힌트 -->
+        <tr>
+            <td class="corner"></td>
+            <td class="hint">1<br>1<br>1</td>
+            <td class="hint">3</td>
+            <td class="hint">5</td>
+            <td class="hint">3</td>
+            <td class="hint">1<br>1<br>1</td>
+        </tr>
+
+        <!-- 첫 번째 가로줄 -->
+        <tr>
+            <td class="hint">1 1 1</td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+        </tr>
+
+        <!-- 두 번째 가로줄 -->
+        <tr>
+            <td class="hint">3</td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+        </tr>
+
+        <!-- 세 번째 가로줄 -->
+        <tr>
+            <td class="hint">5</td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+        </tr>
+
+        <!-- 네 번째 가로줄 -->
+        <tr>
+            <td class="hint">3</td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+        </tr>
+
+        <!-- 다섯 번째 가로줄 -->
+        <tr>
+            <td class="hint">1 1 1</td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+            <td class="cell"
+                onmousedown="handleMouse(event, this)"
+                onmouseover="handleMouseOver(this)">
+            </td>
+        </tr>
+    </table>
+
+    <div class="history-buttons">
+        <button onclick="undoAction()">이전</button>
+        <button onclick="redoAction()">앞으로</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
